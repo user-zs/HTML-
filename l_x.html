@@ -2,18 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>九九乘法表v3</title>
+    <title>九九乘法表v4</title>
     <style>
+        .big{
+            width: 1270px;
+            height: 390px;
+            margin: 0 auto;
+        }
+        .b_t1{
+            float: right;
+        }
+        .b_t2{
+            float: right;
+        }
         .table{
             border: 2px black solid;
             width: 630px;
             height: 190px;
             text-align: left;
         }
+        .table1{
+            border: 2px black solid;
+            width: 630px;
+            height: 190px;
+            text-align: left;
+        }
+        .table2{
+            border: 2px black solid;
+            width: 630px;
+            height: 190px;
+            text-align: right;
+        }
+        .table3{
+            border: 2px black solid;
+            width: 630px;
+            height: 190px;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
+<div class="big">
+    <div class="b_t1">
 <div class="table">
+    <script>
+        for(var i=1;i<10;i++){
+            for(var j=1;j<i+1;j++){
+                var num = i * j;
+                string = j+"*"+i+"="+num;
+                document.write("<span style='display: inline-block; width:70px'>"+ string+"</span>");
+            }
+            document.write("<br>");
+        }
+    </script>
+</div>
+<div class="table1">
     <script>
         for(var i=9;i>0;i--){
             for(var j=1;j<i+1;j++){
@@ -24,6 +67,35 @@
             document.write("<br>");
         }
     </script>
+</div>
+</div>
+
+<div class="b_t2">
+<div class="table2">
+    <script>
+        for(var i=1;i<10;i++){
+            for(var j=1;j<i+1;j++){
+                var num = i * j;
+                string = j+"*"+i+"="+num;
+                document.write("<span style='display: inline-block; width:70px'>"+ string+"</span>");
+            }
+            document.write("<br>");
+        }
+    </script>
+</div>
+<div class="table3">
+    <script>
+        for(var i=9;i>0;i--){
+            for(var j=1;j<i+1;j++){
+                var num = i * j;
+                string = j+"*"+i+"="+num;
+                document.write("<span style='display: inline-block; width:70px'>"+ string+"</span>");
+            }
+            document.write("<br>");
+        }
+    </script>
+</div>
+</div>
 </div>
 </body>
 </html>
