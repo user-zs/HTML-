@@ -5,7 +5,7 @@
     <title>九九乘法表v4</title>
     <style>
         .big{
-            width: 1270px;
+            width: 1290px;
             height: 390px;
             margin: 0 auto;
         }
@@ -20,30 +20,43 @@
             width: 630px;
             height: 190px;
             text-align: left;
+            margin: 4px;
         }
         .table1{
             border: 2px black solid;
             width: 630px;
             height: 190px;
             text-align: left;
+            margin: 4px;
         }
         .table2{
             border: 2px black solid;
             width: 630px;
             height: 190px;
             text-align: right;
+            margin: 4px;
         }
         .table3{
             border: 2px black solid;
             width: 630px;
             height: 190px;
             text-align: right;
+            margin: 4px;
+        }
+        .table2>span{
+            float: right;
+        }
+        .table3>span{
+            float: right;
         }
     </style>
 </head>
 <body>
+<!--整体大框，包含四个象限-->
 <div class="big">
-    <div class="b_t1">
+<!--包含一四象限-->
+<div class="b_t1">
+<!--第一象限-->
 <div class="table">
     <script>
         for(var i=1;i<10;i++){
@@ -56,6 +69,7 @@
         }
     </script>
 </div>
+<!--第四象限-->
 <div class="table1">
     <script>
         for(var i=9;i>0;i--){
@@ -69,26 +83,28 @@
     </script>
 </div>
 </div>
-
+<!--包含二三象限-->
 <div class="b_t2">
+<!--第二象限-->
 <div class="table2">
     <script>
         for(var i=1;i<10;i++){
             for(var j=1;j<i+1;j++){
-                var num = i * j;
-                string = j+"*"+i+"="+num;
+                var num = j * i;
+                string = num+"="+i+"*"+j;
                 document.write("<span style='display: inline-block; width:70px'>"+ string+"</span>");
             }
             document.write("<br>");
         }
     </script>
 </div>
+<!--第三象限-->
 <div class="table3">
     <script>
         for(var i=9;i>0;i--){
             for(var j=1;j<i+1;j++){
                 var num = i * j;
-                string = j+"*"+i+"="+num;
+                string = num+"="+i+"*"+j;
                 document.write("<span style='display: inline-block; width:70px'>"+ string+"</span>");
             }
             document.write("<br>");
