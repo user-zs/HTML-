@@ -61,19 +61,12 @@
     <script>
         for(var i=1;i<10;i++){
             for(var j=1;j<i+1;j++){
-                if(i%2==0){
-                    var num = i * j;
-                    string = j+"*"+i+"="+num;
-                    document.write("<span style='display: inline-block; width:70px;background-color: dodgerblue'>"+ string+"</span>");
-                }else if(i%3==0){
-                    var num = i * j;
-                    string = j+"*"+i+"="+num;
-                    document.write("<span style='display: inline-block; width:70px;background-color: deepskyblue'>"+ string+"</span>");
-                }else{
-                    var num = i * j;
-                    string = j+"*"+i+"="+num;
-                    document.write("<span style='display: inline-block; width:70px;background-color: paleturquoise'>"+ string+"</span>");
-                }
+                var num = i * j;
+                string = j+"*"+i+"="+num;
+                var r = parseInt(Math.random()*255);
+                var g = parseInt(Math.random()*255);
+                var b = parseInt(Math.random()*255);
+                document.write("<span style='display: inline-block; width:70px; background-color:rgb("+r+","+g+","+b+")'>"+ string+"</span>");
             }
             document.write("<br>");
         }
@@ -84,19 +77,12 @@
     <script>
         for(var i=9;i>0;i--){
             for(var j=1;j<i+1;j++){
-                if(i%2==0){
-                    var num = i * j;
-                    string = j+"*"+i+"="+num;
-                    document.write("<span style='display: inline-block; width:70px;background-color: dodgerblue'>"+ string+"</span>");
-                }else if(i%3==0){
-                    var num = i * j;
-                    string = j+"*"+i+"="+num;
-                    document.write("<span style='display: inline-block; width:70px;background-color: deepskyblue'>"+ string+"</span>");
-                }else{
-                    var num = i * j;
-                    string = j+"*"+i+"="+num;
-                    document.write("<span style='display: inline-block; width:70px;background-color: paleturquoise'>"+ string+"</span>");
-                }
+                var num = i * j;
+                string = j+"*"+i+"="+num;
+                var r = parseInt(Math.random()*255);
+                var g = parseInt(Math.random()*255);
+                var b = parseInt(Math.random()*255);
+                document.write("<span style='display: inline-block; width:70px; background-color:rgb("+r+","+g+","+b+")'>"+ string+"</span>");
             }
             document.write("<br>");
         }
@@ -110,20 +96,12 @@
     <script>
         for(var i=1;i<10;i++){
             for(var j=1;j<i+1;j++){
-                if(i%2==0){
-                    var num = i * j;
-                    string = num+"="+i+"*"+j;
-                    document.write("<span style='display: inline-block; width:70px;background-color: dodgerblue'>"+ string+"</span>");
-                }else if(i%3==0){
-                    var num = i * j;
-                    string = num+"="+i+"*"+j;
-                    document.write("<span style='display: inline-block; width:70px;background-color: deepskyblue'>"+ string+"</span>");
-                }else{
-                    var num = i * j;
-                    string = num+"="+i+"*"+j;
-                    document.write("<span style='display: inline-block; width:70px;background-color: paleturquoise'>"+ string+"</span>");
-                }
-
+                var num = i * j;
+                string = num+"="+i+"*"+j;
+                var r = parseInt(Math.random()*255);
+                var g = parseInt(Math.random()*255);
+                var b = parseInt(Math.random()*255);
+                document.write("<span style='display: inline-block; width:70px; background-color:rgb("+r+","+g+","+b+")'>"+ string+"</span>");
             }
             document.write("<br>");
         }
@@ -134,19 +112,12 @@
     <script>
         for(var i=9;i>0;i--){
             for(var j=1;j<i+1;j++){
-                if(i%2==0){
-                    var num = i * j;
-                    string = num+"="+i+"*"+j;
-                    document.write("<span style='display: inline-block; width:70px;background-color: dodgerblue'>"+ string+"</span>");
-                }else if(i%3==0){
-                    var num = i * j;
-                    string = num+"="+i+"*"+j;
-                    document.write("<span style='display: inline-block; width:70px;background-color: deepskyblue'>"+ string+"</span>");
-                }else{
-                    var num = i * j;
-                    string = num+"="+i+"*"+j;
-                    document.write("<span style='display: inline-block; width:70px;background-color: paleturquoise'>"+ string+"</span>");
-                }
+                var num = i * j;
+                string = num+"="+i+"*"+j;
+                var r = parseInt(Math.random()*255);
+                var g = parseInt(Math.random()*255);
+                var b = parseInt(Math.random()*255);
+                document.write("<span style='display: inline-block; width:70px; background-color:rgb("+r+","+g+","+b+")'>"+ string+"</span>");
             }
             document.write("<br>");
         }
